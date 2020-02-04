@@ -13,6 +13,12 @@ package com.example.project
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
+/**
+ * See https://github.com/InteractiveAdvertisingBureau/openrtb/blob/master/supplychainobject.md#serialization-of-an-openrtb-supplychain-object-into-a-url-parameter
+ * for the specification.
+ *
+ * Ignore the final requirements around URL encoded characters. Or add tests and implement for bonus points
+ */
 class SchainTests {
 
     @Test
