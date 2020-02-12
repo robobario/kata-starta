@@ -7,6 +7,10 @@ class Character {
     fun attack(c2: Character) {
     }
 
+    fun isAlive(): Boolean {
+        return false
+    }
+
     var health: Int = 100
 }
 
@@ -19,6 +23,7 @@ class RpgTests {
         val c2 = Character()
         c1.attack(c2)
         Assertions.assertEquals(95, c2.health)
+        Assertions.assertEquals(true, c2.isAlive())
     }
 
 }
